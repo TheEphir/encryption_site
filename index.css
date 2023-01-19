@@ -1,0 +1,145 @@
+#topForm{
+	/*background-color: green;*/
+	width: 100%;
+}
+#centralForm{
+	/*background-color: cyan;*/
+	width: 100%;
+	height: 100px;
+}
+#botForm{
+	padding-top: 10px;
+	/*background-color: blue;*/
+	width: 100%;
+}
+#shifr{
+	align-items: center;
+}
+
+button {
+	float: left;
+	margin-right:5px;
+	font:16px Verdana, Geneva, sans-serif; 
+	margin-top: 5px;
+	border:0;
+	outline: none;
+	color: white;
+	padding: 1.3em 10em calc(1.3em + 3px);
+	border-radius: 3px;
+	box-shadow: 0 -3px rgb(53,167,110) inset;
+	background: rgb(64,199,129);
+	transition: 0.2s;
+} 
+button:hover { background: rgb(53, 167, 110); }
+
+#clear{
+	margin-left: 25px;
+	padding-left:1em; 
+	padding-right: 3.4em;
+	width: 30px;
+}
+
+textarea {
+	word-break: break-word;
+	background-image: none;
+	border-radius: 5px;
+	border-color: #ddd;
+	color: #333;
+	margin: -4px 0 0;
+	resize: none;
+	width: 100%;
+	background-color: #fff;
+	font-family: 'Roboto',arial,sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	padding-left: 20px;
+	margin-top: 10px;
+	min-height: 110px;
+	padding-top: 10px;
+	padding-right: 54px;
+	overflow: hidden;
+	box-sizing: border-box;
+	height: 300px;
+	padding-bottom: 1px;
+	direction: ltr;
+}
+
+#content1{
+	disabled:true;
+}
+
+#anim{
+	float: left;
+	margin-top: 5px;
+}
+
+.tooltip {
+  position: relative;
+  background: rgb(80,180,129);
+  padding: 5px 12px;
+  margin: 5px;
+  font-size: 15px;
+  border-radius: 100%;
+  color: #FFF;
+}
+
+.tooltip:before,
+.tooltip:after {
+  position: absolute;
+  content: '';
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.tooltip:before {
+  border-width: 10px 8px 0 8px;
+  border-style: solid;
+  border-color: rgb(80,180,129) transparent transparent transparent;
+  top: -15px;
+  transform: translateY(20px);
+}
+
+.tooltip:after {
+  content: attr(data-tooltip);
+  background: rgb(80,180,129);
+  width: 175px;
+  height: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  top: -75px;
+  left: -10px;
+  padding: 10px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transform: translateY(20px);
+}
+
+.tooltip:hover::before,
+.tooltip:hover::after {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  70% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+#anim:hover {
+  animation: shake 500ms ease-in-out forwards;
+}
+
+#madeBy{
+	padding-bottom: 5px;
+	float: right;
+	color: rgba(0,0,0,0.3);
+}
